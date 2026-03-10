@@ -1,0 +1,5 @@
+{
+  "name": "agent-team",
+  "description": "Orchestrate Claude Code Agent Teams with contract-first design, dynamic teammate specialization, and structured quality gates. Adds a /agent-team skill.",
+  "version": "1.0.0"
+}

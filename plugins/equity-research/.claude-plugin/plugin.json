@@ -1,0 +1,5 @@
+{
+  "name": "equity-research",
+  "description": "Institutional-grade equity research with chance/risk reports, DCF valuation, and investment recommendations for US-listed stocks. Adds a /equity-research skill.",
+  "version": "1.0.0"
+}

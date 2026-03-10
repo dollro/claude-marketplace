@@ -1,0 +1,5 @@
+{
+  "name": "braindump2spec",
+  "description": "Transform rough brain dumps into developer-ready specifications through structured iterative Q&A interviews. Adds a /braindump2spec skill.",
+  "version": "1.0.0"
+}

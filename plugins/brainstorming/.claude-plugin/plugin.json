@@ -1,0 +1,5 @@
+{
+  "name": "brainstorming",
+  "description": "Structured exploration of user intent, requirements, and design before any creative or implementation work. Adds a /brainstorming skill.",
+  "version": "1.0.0"
+}

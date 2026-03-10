@@ -1,0 +1,112 @@
+{
+  "name": "held-marketplace",
+  "owner": {
+    "name": "Held"
+  },
+  "metadata": {
+    "description": "Curated Claude Code plugins for AI agent development, workflows, full-stack development, and analysis",
+    "version": "0.1.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "ai-dev",
+      "source": "./plugins/ai-dev",
+      "description": "Production-grade agentic AI patterns using LangGraph + Pydantic AI + CrewAI. Includes /ai-dev skill and ai-agent-developer agent.",
+      "version": "1.0.0",
+      "category": "ai-agent-dev-tools",
+      "tags": ["langgraph", "pydantic-ai", "crewai", "multi-agent", "orchestration", "observability"],
+      "keywords": ["ai", "agents", "langgraph", "pydantic-ai", "crewai", "multi-agent"]
+    },
+    {
+      "name": "prompt-engineering",
+      "source": "./plugins/prompt-engineering",
+      "description": "Design, optimize, and manage LLM prompts with focus on reliability, efficiency, and measurable outcomes. Includes /prompt-engineering skill and prompt-engineer agent.",
+      "version": "1.0.0",
+      "category": "ai-agent-dev-tools",
+      "tags": ["prompts", "llm", "optimization", "evaluation"],
+      "keywords": ["prompt", "llm", "optimization", "engineering"]
+    },
+    {
+      "name": "agent-team",
+      "source": "./plugins/agent-team",
+      "description": "Orchestrate Claude Code Agent Teams with contract-first design, dynamic teammate specialization, and structured quality gates. Adds a /agent-team skill.",
+      "version": "1.0.0",
+      "category": "workflows",
+      "tags": ["agent-teams", "orchestration", "parallel-build", "contracts", "coordination"],
+      "keywords": ["agent-team", "parallel", "swarm", "coordination", "delegate"]
+    },
+    {
+      "name": "braindump2spec",
+      "source": "./plugins/braindump2spec",
+      "description": "Transform rough brain dumps into developer-ready specifications through structured iterative Q&A interviews. Adds a /braindump2spec skill.",
+      "version": "1.0.0",
+      "category": "workflows",
+      "tags": ["specification", "requirements", "braindump", "prd", "interviews"],
+      "keywords": ["braindump", "spec", "specification", "prd", "requirements"]
+    },
+    {
+      "name": "brainstorming",
+      "source": "./plugins/brainstorming",
+      "description": "Structured exploration of user intent, requirements, and design before any creative or implementation work. Adds a /brainstorming skill.",
+      "version": "1.0.0",
+      "category": "workflows",
+      "tags": ["design", "planning", "ideation", "requirements"],
+      "keywords": ["brainstorm", "design", "ideation", "planning"]
+    },
+    {
+      "name": "branch",
+      "source": "./plugins/branch",
+      "description": "Create new git branches with corresponding planning directories. Adds a /branch skill.",
+      "version": "1.0.0",
+      "category": "workflows",
+      "tags": ["git", "branching", "planning"],
+      "keywords": ["git", "branch", "planning"]
+    },
+    {
+      "name": "code-review",
+      "source": "./plugins/code-review",
+      "description": "Comprehensive technical code review covering completeness, security, performance, and best practices. Includes /code-review skill and code-reviewer agent.",
+      "version": "1.0.0",
+      "category": "workflows",
+      "tags": ["review", "security", "performance", "quality"],
+      "keywords": ["code-review", "review", "security", "quality"]
+    },
+    {
+      "name": "spec2plan",
+      "source": "./plugins/spec2plan",
+      "description": "Transform feature specifications into comprehensive, actionable implementation plans. Includes spec2plan orchestrator and spec2plan_sub domain expert agents.",
+      "version": "1.0.0",
+      "category": "workflows",
+      "tags": ["planning", "architecture", "implementation", "specification"],
+      "keywords": ["spec", "plan", "architecture", "implementation"]
+    },
+    {
+      "name": "electron-dev",
+      "source": "./plugins/electron-dev",
+      "description": "Build secure, performant cross-platform desktop applications with Electron. Includes /electron-development skill and electron-developer agent.",
+      "version": "1.0.0",
+      "category": "development",
+      "tags": ["electron", "desktop", "cross-platform", "native"],
+      "keywords": ["electron", "desktop", "app", "cross-platform"]
+    },
+    {
+      "name": "fullstack-dev",
+      "source": "./plugins/fullstack-dev",
+      "description": "End-to-end feature delivery from database to UI with seamless integration. Includes /fullstack-development skill and fullstack-developer agent.",
+      "version": "1.0.0",
+      "category": "development",
+      "tags": ["fullstack", "frontend", "backend", "database", "integration"],
+      "keywords": ["fullstack", "frontend", "backend", "full-stack"]
+    },
+    {
+      "name": "equity-research",
+      "source": "./plugins/equity-research",
+      "description": "Institutional-grade equity research with chance/risk reports, DCF valuation, and investment recommendations for US-listed stocks. Adds a /equity-research skill.",
+      "version": "1.0.0",
+      "category": "analysis",
+      "tags": ["stocks", "valuation", "dcf", "investment", "finance"],
+      "keywords": ["equity", "stocks", "research", "valuation", "finance"]
+    }
+  ]
+}

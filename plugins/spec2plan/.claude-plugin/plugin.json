@@ -1,0 +1,5 @@
+{
+  "name": "spec2plan",
+  "description": "Transform feature specifications into comprehensive, actionable implementation plans. Includes spec2plan orchestrator and spec2plan_sub domain expert agents.",
+  "version": "1.0.0"
+}
