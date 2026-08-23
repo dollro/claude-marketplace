@@ -39,11 +39,11 @@
     {
       "name": "braindump2spec",
       "source": "./plugins/braindump2spec",
-      "description": "Transform rough brain dumps into developer-ready specifications through structured iterative Q&A interviews. Adds a /braindump2spec skill.",
-      "version": "1.0.0",
+      "description": "Transform rough brain dumps \u2014 or an existing design conversation \u2014 into agent-implementable specifications through structured Q&A. Outputs braindump_final.md, spec.md (prioritized user stories, EARS requirements, Given/When/Then acceptance scenarios) and constraints.md. Adds a /braindump2spec skill.",
+      "version": "2.0.0",
       "category": "workflows",
-      "tags": ["specification", "requirements", "braindump", "prd", "interviews"],
-      "keywords": ["braindump", "spec", "specification", "prd", "requirements"]
+      "tags": ["specification", "requirements", "braindump", "prd", "interviews", "spec-driven-development"],
+      "keywords": ["braindump", "spec", "specification", "prd", "requirements", "sdd", "ears", "acceptance criteria"]
     },
     {
       "name": "brainstorming",
@@ -75,11 +75,11 @@
     {
       "name": "spec2plan",
       "source": "./plugins/spec2plan",
-      "description": "Transform feature specifications into comprehensive, actionable implementation plans. Includes spec2plan orchestrator and spec2plan_sub domain expert agents.",
-      "version": "1.0.0",
+      "description": "Transform feature specifications into context-rich implementation plans and executable task registries. Outputs implementation-plan.md and tasks.md with self-sufficient tasks, runnable validation commands, story-first phasing and explicit parallel-safety. Includes spec2plan orchestrator and spec2plan_sub domain expert agents.",
+      "version": "2.0.0",
       "category": "workflows",
-      "tags": ["planning", "architecture", "implementation", "specification"],
-      "keywords": ["spec", "plan", "architecture", "implementation"]
+      "tags": ["planning", "architecture", "implementation", "specification", "spec-driven-development", "tasks"],
+      "keywords": ["spec", "plan", "architecture", "implementation", "tasks", "sdd", "validation gates", "parallel execution"]
     },
     {
       "name": "electron-dev",

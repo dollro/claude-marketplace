@@ -104,6 +104,22 @@ For each:
 
 This section is critical for preventing scope creep.
 
+### 5.3 Non-Objectives
+
+Distinct from 5.2. Deferred means "not yet"; a non-objective means "not this
+feature, ever". Capture things the user explicitly rejected, or approaches they
+ruled out during the interview.
+
+For each:
+- What it is
+- Why it is out of bounds (conflicts with the product's purpose, belongs to a
+  different system, was tried and rejected)
+
+This bounds where an implementing agent may wander. "This is not a general-purpose
+reporting tool" prevents a whole category of scope invention that 5.2 does not.
+
+The braindump template's "What should this NOT be?" question feeds this section.
+
 ---
 
 ## Section 6: User Journeys & UX Flows
@@ -177,6 +193,10 @@ Group by feature or use case.
 
 ## Section 10: Non-Functional Requirements
 
+This section and the technical constraints from Section 12 are the source for
+`constraints.md`, generated in Step 5. Capture numbers here wherever the user
+gave them — "fast" recorded now becomes an unverifiable requirement later.
+
 Cover as relevant (not all will apply to every feature):
 
 - **Performance:** Response times, throughput, concurrent user targets
@@ -206,10 +226,20 @@ For each risk:
 - Data migrations or infrastructure changes
 
 ### Open Questions
-Items that came up during the interview but were not resolved. Format:
+Items that came up during the interview but were not resolved. Every
+`[NEEDS CLARIFICATION: ...]` marker placed elsewhere in the document must also
+appear here — the marker flags it in place, this section makes it countable.
+
+Format:
 - **Question:** [The open question]
 - **Context:** [Why it matters]
+- **Blocks:** [Which use cases or features cannot be built until this is answered]
 - **Proposed next step:** [Who should answer this, how]
+
+Do not convert an open question into an assumption to make the document feel
+complete. An assumption the user can correct in review is fine; a decision
+silently made on their behalf is the failure mode this document exists to
+prevent.
 
 ---
 
@@ -230,8 +260,12 @@ Before finalizing, verify:
 - [ ] Executive summary is readable standalone
 - [ ] Every feature has at least one acceptance criterion
 - [ ] Out-of-scope items are listed (prevents scope creep)
+- [ ] Non-objectives are captured separately from deferred scope
 - [ ] Edge cases cover error states, empty states, and boundary conditions
 - [ ] Assumptions are explicitly marked as `[ASSUMPTION — verify]`
+- [ ] Unresolved decisions are marked `[NEEDS CLARIFICATION: <question>]` and
+      rolled up into Section 11
+- [ ] Every stated threshold has a number, not an adjective
 - [ ] User's original language/terminology is preserved
 - [ ] Decision rationale is captured where choices were made
 - [ ] Open questions have proposed next steps
